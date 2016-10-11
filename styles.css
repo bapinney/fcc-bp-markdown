@@ -1,0 +1,33 @@
+body {
+    background: gradient();
+}
+
+.maincontainer {
+    border: 2px solid black;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.editor {
+    border: 1px solid blue;
+    margin: 4px;
+    min-width: 300px;
+    flex: 1;
+}
+
+.editor textarea {
+    height: 100%;
+    width: 100%;
+}
+
+.preview {
+    border: 1px solid green;
+    flex: 1;
+    margin: 4px;
+    min-width: 300px;
+    height: 600px;
+    
+}
