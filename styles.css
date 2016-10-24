@@ -1,33 +1,43 @@
+/* line 6, /Applications/mampstack-5.6.6-0/apache2/htdocs/fcc-bp-markdown/styles.scss */
 body {
-    background: gradient();
-}
+  background: radial-gradient(ellipse at center, #d9e7f2 0%, #c6dbec 100%); }
 
+/* line 10, /Applications/mampstack-5.6.6-0/apache2/htdocs/fcc-bp-markdown/styles.scss */
+html {
+  height: 100%;
+  /* Prevents the gradient from repeating if the content does not span the entire viewport */ }
+
+/* line 15, /Applications/mampstack-5.6.6-0/apache2/htdocs/fcc-bp-markdown/styles.scss */
 .maincontainer {
-    border: 2px solid black;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    margin: 0 auto;
-    max-width: 800px;
-}
+  align-content: stretch;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px; }
 
+/* line 22, /Applications/mampstack-5.6.6-0/apache2/htdocs/fcc-bp-markdown/styles.scss */
 .editor {
-    border: 1px solid blue;
-    margin: 4px;
-    min-width: 300px;
-    flex: 1;
-}
+  background-color: white;
+  border-radius: 5px;
+  display: inline-flex;
+  margin-right: 50px;
+  min-height: 500px;
+  min-width: 300px; }
 
+/* line 31, /Applications/mampstack-5.6.6-0/apache2/htdocs/fcc-bp-markdown/styles.scss */
 .editor textarea {
-    height: 100%;
-    width: 100%;
-}
+  background-color: white;
+  border-radius: 5px;
+  height: 100%;
+  resize: none;
+  width: 100%; }
 
+/* line 39, /Applications/mampstack-5.6.6-0/apache2/htdocs/fcc-bp-markdown/styles.scss */
 .preview {
-    border: 1px solid green;
-    flex: 1;
-    margin: 4px;
-    min-width: 300px;
-    height: 600px;
-    
-}
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  min-height: 100px;
+  min-width: 300px;
+  padding: 2px;
+  display: inline-flex; }
+
+/*# sourceMappingURL=styles.css.map */

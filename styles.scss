@@ -1,0 +1,46 @@
+$bgColor: hsl(207, 50%, 90%);
+$bgCol2: darken($bgColor, 5%);
+$editBg: white;
+$previewBg: darken($editBg, 5%);
+
+body {
+    background: radial-gradient(ellipse at center, $bgColor 0%, $bgCol2 100%);
+}
+
+html {
+    height: 100%; /* Prevents the gradient from repeating if the content does not span the entire viewport */
+}
+
+
+.maincontainer {
+    align-content: stretch;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.editor {
+    background-color: $editBg;
+    border-radius: 5px;
+    display: inline-flex;
+    margin-right: 50px;
+    min-height: 500px;
+    min-width: 300px;
+}
+
+.editor textarea {
+    background-color: $editBg;
+    border-radius: 5px;
+    height: 100%;
+    resize: none;
+    width: 100%;
+}
+
+.preview {
+    background-color: $previewBg;
+    border-radius: 5px;
+    min-height: 100px;
+    min-width: 300px;
+    padding: 2px;
+    display: inline-flex;
+}
